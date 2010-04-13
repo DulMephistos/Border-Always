@@ -1,24 +1,27 @@
 ﻿/**********************************************************
-Code by: Fábio Teles | pixel4@gmail.com | +55(21)9769-4520
-Class BorderAlways
-
-///// CONSTRUCTOR:
-function(stageRef:Stage,stageInitialWidth:Number,stageInitialHeight:Number);
-
-///// PUBLIC PROPERTIES:
-width:Number [read-only];
-height:Number [read-only];
-
-///// PUBLIC METHODS:
-addMC(mc:MovieClip,align:String,ease:Object=null,limits:Object,round:Boolean=false,coefWidth:Number=NaN,coefHeight:Number=NaN);
-	ease{type:Func, time:Number};
-		type = fl.transitions.easing;
-		time = inMilliseconds;
-	limits{left:Number, right:Number,. top:Number, bottom:Number};
-	coefWidth = custom coeficient for position x;
-	coefHeight = custom coeficient for position y;
------------------------------------		
-removeMC(mc:MovieClip);
+* Code by: Fábio Teles | pixel4@gmail.com | +55(21)9769-4520
+* Class BorderAlways
+* 
+* Released under MIT license:
+* http://www.opensource.org/licenses/mit-license.php
+* 
+* ///// CONSTRUCTOR:
+* function(stageRef:Stage,stageInitialWidth:Number,stageInitialHeight:Number);
+* 
+* ///// PUBLIC PROPERTIES:
+* width:Number [read-only];
+* height:Number [read-only];
+* 
+* ///// PUBLIC METHODS:
+* addMC(mc:MovieClip,align:String,ease:Object=null,limits:Object,round:Boolean=false,coefWidth:Number=NaN,coefHeight:Number=NaN);
+* 	ease{type:Func, time:Number};
+* 		type = fl.transitions.easing;
+* 		time = inMilliseconds;
+* 	limits{left:Number, right:Number,. top:Number, bottom:Number};
+* 	coefWidth = custom coeficient for position x;
+* 	coefHeight = custom coeficient for position y;
+* -----------------------------------		
+* removeMC(mc:MovieClip);
 **********************************************************/
 package biz.pixel4.display{
 	import com.gskinner.motion.GTween;
